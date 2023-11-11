@@ -54,7 +54,7 @@ const RegistrationForm = () => {
           e.preventDefault();
           if (validateForm()) {
             try {
-              const response = await fetch('http://localhost:8080/Data/Add', {
+              const response = await fetch('studentsdatabackendspringboot-production.up.railway.app/Data/Add', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json'
